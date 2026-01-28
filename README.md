@@ -11,6 +11,6 @@ A Wearable Inertial Measurement Unit-Based Motion Capture System with Deep Learn
 - Software: Arduino IDE, Pycharm.
 
 ## Description
-- ESP32 + MPU6050 ---Serial Port---> PC/Laptop ----evaluate pose/exercise
-            Data (pitch + roll + yaw)                AI model
+- ESP32 + MPU6050 ---Serial Port---> PC/Laptop ---->evaluate pose/exercise
+-            Data (pitch + roll + yaw)                AI model
   
