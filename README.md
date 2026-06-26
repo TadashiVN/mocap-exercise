@@ -1,4 +1,4 @@
-# Wearable IMU-Based Squat Posture Evaluation
+<img width="923" height="498" alt="image" src="https://github.com/user-attachments/assets/ef04d520-aa39-41e3-ab8c-81c6ee5f40d1" /># Wearable IMU-Based Squat Posture Evaluation
 
 A university student prototype that uses ESP32 nodes and MPU6050 IMU sensors to collect body motion data and classify squat posture using a pre-trained TensorFlow/Keras model.
 
@@ -7,6 +7,7 @@ A university student prototype that uses ESP32 nodes and MPU6050 IMU sensors to 
 ## 1. Overview
 
 The system collects accelerometer and gyroscope data from wearable MPU6050 sensors. Each ESP32 node streams sensor data to a PC through Serial Port. A Python application reads the serial data, builds a sliding time window, runs model inference, and displays the latest squat posture result on a simple Flask web interface.
+<img width="1067" height="606" alt="image" src="https://github.com/user-attachments/assets/e0b95772-9cba-4b1f-a118-2b49347cc3a9" />
 
 ## 2. System Architecture
 
@@ -28,9 +29,8 @@ flowchart LR
 - USB cables or power source for each ESP32
 - PC / laptop for receiving serial data and running the web app
 
-**Image to add:** `docs/images/hardware_setup.jpg`  
-**Suggested caption:** ESP32 and MPU6050 sensor setup used for collecting squat motion data.  
-**What to capture:** Take a clear photo of the ESP32 boards, MPU6050 sensors, wires, and the PC/laptop connection. If the sensors are attached to the body, add one extra image named `docs/images/wearable_setup.jpg`.
+<img width="939" height="430" alt="image" src="https://github.com/user-attachments/assets/6a939661-2cd8-4bdf-80bd-db3ed24721c8" />
+
 
 ## 4. Software & Tools
 
@@ -74,9 +74,8 @@ Where:
 - `AX, AY, AZ`: accelerometer values
 - `GX, GY, GZ`: gyroscope values
 
-**Image to add:** `docs/images/serial_monitor.png`  
-**Suggested caption:** Serial Monitor output showing IMU data streamed from an ESP32 node.  
-**What to capture:** Open Arduino Serial Monitor and take a screenshot showing several lines of data in this format.
+<img width="474" height="409" alt="image" src="https://github.com/user-attachments/assets/9dc6911e-61d7-4de6-b8c1-b4ee58baeff1" />
+
 
 ## 7. Squat Classes
 
@@ -87,13 +86,11 @@ The current model predicts four squat posture classes:
 - `squat_shallow`
 - `squat_heels_up`
 
-**Image to add:** `docs/images/web_demo.png`  
-**Suggested caption:** Flask web interface displaying the latest squat posture prediction and confidence score.  
-**What to capture:** Run `python app.py`, open `http://localhost:5000`, click **START**, and take a screenshot when the page shows a prediction result.
+<img width="801" height="484" alt="image" src="https://github.com/user-attachments/assets/156327d2-c0b6-4c57-91c3-4ec6f745b621" />
+<img width="991" height="487" alt="image" src="https://github.com/user-attachments/assets/0fe902e5-85c6-4cb2-99c6-8244148ff140" />
+<img width="923" height="498" alt="image" src="https://github.com/user-attachments/assets/7a189832-43f6-4a72-bd59-ed8e0265fb09" />
+<img width="792" height="494" alt="image" src="https://github.com/user-attachments/assets/401b3050-c154-4c4b-94ac-3fa6d2e5a105" />
 
-**Optional image to add:** `docs/images/data_plot.png`  
-**Suggested caption:** Example accelerometer and gyroscope signals collected from MPU6050 sensors during squat movement.  
-**What to capture:** If you have a Python plot of IMU values over time, place it here. This is optional but useful for showing the sensor-data part.
 
 ## 8. How to Run
 
@@ -151,18 +148,12 @@ http://localhost:5000
 
 Click **START** to begin realtime prediction.
 
-## 9. My Contribution
 
-- Programmed ESP32 nodes to read MPU6050 accelerometer and gyroscope data
-- Streamed IMU data from ESP32 to PC through Serial Port
-- Built a Python realtime prediction script for reading sensor data and running model inference
-- Built a simple Flask web interface to display squat posture results
-
-## 10. Project Status
+## 9. Project Status
 
 This is a university student project / prototype. The main purpose is to practice sensor-based data collection, serial communication, and basic AI-based posture evaluation using embedded devices and Python.
 
-## 11. Notes for Reviewers
+## 10. Notes for Reviewers
 
 - COM ports must be changed depending on the PC.
 - The current model is included for demo purposes.
