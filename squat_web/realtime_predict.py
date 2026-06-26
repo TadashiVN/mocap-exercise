@@ -4,9 +4,11 @@ import time
 import numpy as np
 from collections import deque
 import tensorflow as tf
+from pathlib import Path
 
-MODEL_PATH = "squat_model.h5"
+MODEL_PATH = Path(__file__).resolve().parent / "models" / "squat_model.h5"
 
+# Update these COM ports to match your local ESP32 devices.
 NODE_PORTS = {
     1: "COM3",
     2: "COM16",
