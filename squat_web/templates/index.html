@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Squat AI</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    h1 { font-size: 36px; }
+    #action { font-size: 28px; color: green; }
+  </style>
+</head>
+<body>
+
+<h1>AI Squat Evaluation</h1>
+<button onclick="start()">START</button>
+
+<h2 id="action">Waiting...</h2>
+<p id="conf"></p>
+
+<script>
+function start() {
+  fetch("/start");
+  setInterval(() => {
+    fetch("/result")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("action").innerText =
+          "ACTION: " + data.action;
+        document.getElementById("conf").innerText =
+          "Confidence: " + data.confidence;
+      });
+  }, 500);
+}
+</script>
+
+</body>
+</html>
