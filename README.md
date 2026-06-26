@@ -7,6 +7,7 @@ A university student prototype that uses ESP32 nodes and MPU6050 IMU sensors to 
 ## 1. Overview
 
 The system collects accelerometer and gyroscope data from wearable MPU6050 sensors. Each ESP32 node streams sensor data to a PC through Serial Port. A Python application reads the serial data, builds a sliding time window, runs model inference, and displays the latest squat posture result on a simple Flask web interface.
+
 <img width="800" height="454" alt="image" src="https://github.com/user-attachments/assets/e0b95772-9cba-4b1f-a118-2b49347cc3a9" />
 
 ## 2. System Architecture
