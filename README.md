@@ -10,9 +10,6 @@ The system collects accelerometer and gyroscope data from wearable MPU6050 senso
 
 ## 2. System Architecture
 
-![System Architecture](docs/images/system_architecture.svg)
-
-**Image note:** This diagram is already included. If you have a better real diagram from your report, replace it with `docs/images/system_architecture.png` and update the image path above.
 
 ```mermaid
 flowchart LR
