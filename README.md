@@ -153,10 +153,3 @@ Click **START** to begin realtime prediction.
 ## 9. Project Status
 
 This is a university student project / prototype. The main purpose is to practice sensor-based data collection, serial communication, and basic AI-based posture evaluation using embedded devices and Python.
-
-## 10. Notes for Reviewers
-
-- COM ports must be changed depending on the PC.
-- The current model is included for demo purposes.
-- Real hardware photos and screenshots should be added under `docs/images/` before publishing the repository.
-- Local datasets, logs, IDE folders, and environment files should not be uploaded to GitHub.
